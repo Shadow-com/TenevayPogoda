@@ -3,8 +3,6 @@ import requests
 import json
 bot=telebot.TeleBot('7759941665:AAGwaTMgWDiGuqARz42dLeOHThIGnA4ehPs')
 API = 'f20888227f2d2440ebf6b9dfdef5f811'
-
-
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.send_message(message.chat.id, 'Привет, рад тебя видеть! Напиши название города')
